@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Jun 23 21:03:09 2024
+# Process ID: 7456
+# Current directory: D:/final/final.runs/impl_1
+# Command line: vivado.exe -log TL_DIV.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TL_DIV.tcl -notrace
+# Log file: D:/final/final.runs/impl_1/TL_DIV.vdi
+# Journal file: D:/final/final.runs/impl_1\vivado.jou
+# Running On: PC17, OS: Windows, CPU Frequency: 3096 MHz, CPU Physical cores: 6, Host memory: 16942 MB
+#-----------------------------------------------------------
+source TL_DIV.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 431.902 ; gain = 161.910
+Command: link_design -top TL_DIV -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 868.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/final/final.srcs/constrs_1/new/final.xdc]
+WARNING: [Vivado 12-508] No pins matched 'traffic_div/clk_1hz_reg/Q'. [D:/final/final.srcs/constrs_1/new/final.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-objects [get_pins traffic_div/clk_1hz_reg/Q]'. [D:/final/final.srcs/constrs_1/new/final.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'a'. [D:/final/final.srcs/constrs_1/new/final.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/final/final.srcs/constrs_1/new/final.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/final/final.srcs/constrs_1/new/final.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.520 ; gain = 571.918
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.861 . Memory (MB): peak = 1028.355 ; gain = 19.836
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 20b15d10d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1579.703 ; gain = 551.348
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 20b15d10d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 20b15d10d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ec9a3270
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1ec9a3270
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1916.793 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1916.793 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1916.793 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1916.793 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1916.793 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 191659626
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1916.793 ; gain = 908.273
+INFO: [runtcl-4] Executing : report_drc -file TL_DIV_drc_opted.rpt -pb TL_DIV_drc_opted.pb -rpx TL_DIV_drc_opted.rpx
+Command: report_drc -file TL_DIV_drc_opted.rpt -pb TL_DIV_drc_opted.pb -rpx TL_DIV_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/final/final.runs/impl_1/TL_DIV_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/final/final.runs/impl_1/TL_DIV_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1916.793 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12526afb8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1916.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1916.793 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: rowA[7]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: rowA[7]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    25 |     6 | LVCMOS33(6)                                                            |                                          |        |  +3.30 |    YES |     |
+| 34 |    50 |    26 | LVCMOS33(26)                                                           |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     7 | LVCMOS33(7)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   125 |    39 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 13     | columnB[0]           | LVCMOS33        | IOB_X0Y13            | Y11                  |                      |
+|        | columnB[1]           | LVCMOS33        | IOB_X0Y10            | Y12                  |                      |
+|        | columnB[2]           | LVCMOS33        | IOB_X0Y14            | W11                  |                      |
+|        | columnB[3]           | LVCMOS33        | IOB_X0Y8             | V11                  |                      |
+|        | columnB[4]           | LVCMOS33        | IOB_X0Y12            | T5                   |                      |
+|        | rowA[6]              | LVCMOS33        | IOB_X0Y25            | U10                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | columnA[0]           | LVCMOS33        | IOB_X1Y90            | T14                  |                      |
+|        | columnA[1]           | LVCMOS33        | IOB_X1Y95            | U12                  |                      |
+|        | columnA[2]           | LVCMOS33        | IOB_X1Y94            | U13                  |                      |
+|        | columnA[3]           | LVCMOS33        | IOB_X1Y93            | V13                  |                      |
+|        | columnA[4]           | LVCMOS33        | IOB_X1Y80            | V15                  |                      |
+|        | columnA[5]           | LVCMOS33        | IOB_X1Y89            | T15                  |                      |
+|        | columnA[6]           | LVCMOS33        | IOB_X1Y62            | R16                  |                      |
+|        | columnA[7]           | LVCMOS33        | IOB_X1Y81            | U17                  |                      |
+|        | columnB[5]           | LVCMOS33        | IOB_X1Y63            | W16                  |                      |
+|        | columnB[6]           | LVCMOS33        | IOB_X1Y92            | V12                  |                      |
+|        | columnB[7]           | LVCMOS33        | IOB_X1Y91            | W13                  |                      |
+|        | lightA[1]            | LVCMOS33        | IOB_X1Y87            | R14                  | *                    |
+|        | rowA[0]              | LVCMOS33        | IOB_X1Y58            | V17                  |                      |
+|        | rowA[1]              | LVCMOS33        | IOB_X1Y57            | V18                  |                      |
+|        | rowA[2]              | LVCMOS33        | IOB_X1Y82            | T16                  |                      |
+|        | rowA[3]              | LVCMOS33        | IOB_X1Y61            | R17                  | *                    |
+|        | rowA[4]              | LVCMOS33        | IOB_X1Y53            | P18                  |                      |
+|        | rowA[5]              | LVCMOS33        | IOB_X1Y54            | N17                  |                      |
+|        | rowB[0]              | LVCMOS33        | IOB_X1Y66            | Y18                  |                      |
+|        | rowB[1]              | LVCMOS33        | IOB_X1Y65            | Y19                  |                      |
+|        | rowB[2]              | LVCMOS33        | IOB_X1Y86            | Y16                  |                      |
+|        | rowB[3]              | LVCMOS33        | IOB_X1Y85            | Y17                  |                      |
+|        | rowB[4]              | LVCMOS33        | IOB_X1Y76            | U18                  |                      |
+|        | rowB[5]              | LVCMOS33        | IOB_X1Y75            | U19                  |                      |
+|        | rowB[6]              | LVCMOS33        | IOB_X1Y56            | W18                  |                      |
+|        | rowB[7]              | LVCMOS33        | IOB_X1Y55            | W19                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | clk                  | LVCMOS33        | IOB_X1Y124           | H16                  |                      |
+|        | lightA[0]            | LVCMOS33        | IOB_X1Y118           | G17                  |                      |
+|        | lightA[2]            | LVCMOS33        | IOB_X1Y108           | N15                  |                      |
+|        | lightB[0]            | LVCMOS33        | IOB_X1Y106           | L14                  |                      |
+|        | lightB[1]            | LVCMOS33        | IOB_X1Y104           | M14                  |                      |
+|        | lightB[2]            | LVCMOS33        | IOB_X1Y103           | M15                  |                      |
+|        | reset                | LVCMOS33        | IOB_X1Y142           | D19                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus rowA are not locked:  'rowA[7]' 
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1815331ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.581 . Memory (MB): peak = 1916.793 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1815331ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.586 . Memory (MB): peak = 1916.793 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1815331ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.607 . Memory (MB): peak = 1916.793 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 3 Warnings, 2 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 23 21:03:35 2024...

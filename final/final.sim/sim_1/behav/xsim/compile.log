@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/final.srcs/sources_1/new/traffic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TL_DIV
+INFO: [VRFC 10-311] analyzing module traffic
+INFO: [VRFC 10-311] analyzing module traffic_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/final.srcs/sim_1/new/traffic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/final.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

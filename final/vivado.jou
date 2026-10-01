@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Oct  1 21:46:21 2026
+# Process ID: 27064
+# Current directory: C:/Users/user/Downloads/final/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26560 C:\Users\user\Downloads\final\final\final.xpr
+# Log file: C:/Users/user/Downloads/final/final/vivado.log
+# Journal file: C:/Users/user/Downloads/final/final\vivado.jou
+# Running On: ¤pµµ, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 8390 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Downloads/final/final/final.xpr
+update_compile_order -fileset sources_1
